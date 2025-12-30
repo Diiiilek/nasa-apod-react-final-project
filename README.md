@@ -1,16 +1,102 @@
-# React + Vite
+🌌 NASA Astronomy Picture of the Day (APOD) – React Projesi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, NASA’nın Astronomy Picture of the Day (APOD) API’si kullanılarak geliştirilmiş bir React web uygulamasıdır.
+Kullanıcılar seçtikleri bir tarihe ait NASA’nın paylaştığı uzay fotoğrafını (veya videosunu) ve açıklamasını görüntüleyebilir.
 
-Currently, two official plugins are available:
+🎯 Projenin Amacı
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Bu projenin amacı:
 
-## React Compiler
+Harici bir API kullanarak veri çekme becerisini göstermek
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React’ta component yapısı, useState ve useEffect kullanımını uygulamak
 
-## Expanding the ESLint configuration
+Kullanıcı etkileşimi içeren, sade ve anlaşılır bir arayüz tasarlamak
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Gerçek dünyaya yakın bir senaryo üzerinden frontend geliştirme pratiği yapmaktır
+
+🛠️ Kullanılan Teknolojiler
+
+React (Vite)
+
+JavaScript (ES6+)
+
+HTML5
+
+CSS3
+
+NASA APOD API
+
+Git & GitHub
+
+⚙️ Özellikler
+
+📅 Tarih seçilerek ilgili güne ait içerik görüntüleme
+
+🖼 Görsel veya 🎬 video türüne göre dinamik içerik gösterimi
+
+🎨 İçeriğe göre dinamik arka plan rengi
+
+🧭 Sayfanın tamamının merkezde hizalanması (flex tabanlı layout)
+
+✨ Hover ve modern UI efektleri
+
+🌍 Opsiyonel Türkçe çeviri özelliği (açık kaynaklı servis ile)
+
+⚠️ Çeviri servisi çalışmadığında kullanıcıyı bilgiliren geri dönüş mekanizması
+
+🌐 Türkçe Çeviri Hakkında
+
+NASA APOD API yalnızca İngilizce içerik sağlamaktadır.
+Bu nedenle projede:
+
+Açıklamalar varsayılan olarak İngilizce gösterilmektedir
+
+Kullanıcı isteğine bağlı olarak, açık kaynaklı bir çeviri servisi kullanılarak Türkçe çeviri yapılabilmektedir
+
+Çeviri servisi erişilemediğinde kullanıcıya bilgilendirici bir mesaj gösterilmektedir
+
+Bu yaklaşım, gerçek dünya uygulamalarında sıkça kullanılan graceful fallback mantığına örnek teşkil etmektedir.
+
+🚀 Kurulum ve Çalıştırma
+
+Projeyi yerel ortamda çalıştırmak için:
+
+git clone https://github.com/KULLANICI_ADIN/nasa-apod-react.git
+cd nasa-apod-react
+npm install
+npm run dev
+
+
+Tarayıcıda açmak için:
+
+http://localhost:5173
+
+📁 Proje Yapısı
+src
+├─ components
+│  ├─ Header.jsx
+│  ├─ Content.jsx
+│  └─ Footer.jsx
+├─ services
+│  └─ nasaApi.js
+├─ App.jsx
+├─ App.css
+├─ main.jsx
+
+🧠 Geliştirici Notları
+
+API işlemleri services klasörü altında soyutlanmıştır
+
+Sayfa yerleşimi, büyük ekranlarda da dengeli görünmesi için merkez odaklı tasarlanmıştır
+
+UI/UX kararlarında okunabilirlik ve sadelik ön planda tutulmuştur
+
+👤 Geliştirici
+
+Dilek Nur Çelik
+Hacettepe Üniversitesi – Bilgisayar ve Öğretim Teknolojileri Eğitimi (BÖTE)
+
+📜 Lisans
+
+Bu proje eğitim amaçlı geliştirilmiştir.
