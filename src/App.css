@@ -1,0 +1,169 @@
+/* Genel */
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;      /* ← HER ŞEYİ ORTALAR */
+  padding: 30px 20px;     /* ← kenarlardan nefes aldırır */
+}
+.instruction {
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+  color: #d6d6d6;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  min-height: 100vh;
+  color: #ffffff;
+
+  /* ARKA PLAN */
+  background-image:
+    linear-gradient(
+      rgba(5, 8, 20, 0.85),
+      rgba(5, 8, 20, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  /* 🔴 ASIL MEVZU BURASI */
+  display: flex;
+  justify-content: center;   /* YATAY ORTA */
+}
+
+
+/* Header */
+header {
+  text-align: center;
+  padding: 24px 16px;
+  background-color: rgba(0, 0, 0, 0.45);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+}
+
+
+header p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #cfcfcf;
+}
+
+/* Ana içerik - ORTALAMA */
+main {
+  max-width: 920px;
+  margin: 32px auto;        /* ← ORTALAR */
+  padding: 24px;
+  text-align: center;
+ /* background-color: rgba(0, 0, 0, 0.35); */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Tarih input */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  font-size: 0.95rem;
+  font-family: inherit;
+
+  margin: 12px auto 22px;
+  display: block;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+
+/* Başlık */
+main h2 {
+  margin: 8px 0 12px;
+  font-size: 1.6rem;
+}
+
+/* Görsel */
+main img {
+  max-width: 100%;
+  border-radius: 14px;
+  margin: 18px 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+}
+
+
+/* Video */
+iframe {
+  margin: 18px 0;
+  border-radius: 14px;
+}
+
+/* Açıklama */
+main p {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 0.98rem;
+  color: #e6e6e6;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 14px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #bdbdbd;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+main:hover {
+  box-shadow: 0 0 22px rgba(255, 255, 255, 0.18);
+  transition: 0.25s ease;
+}
+
+input[type="date"]:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+input[type="date"]:focus {
+  outline: none;
+  border-color: #9aa7ff;
+  box-shadow: 0 0 0 3px rgba(154, 167, 255, 0.25);
+}
+
+
+
+/* Küçük ekranlar */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+  main {
+    margin: 20px 12px;
+    padding: 18px;
+  }
+}
